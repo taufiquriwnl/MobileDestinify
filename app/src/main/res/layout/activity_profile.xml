@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/secondary">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:layout_width="475dp"
+            android:layout_height="400dp"
+            android:src="@drawable/backgroundprofile" />
+
+        <ImageView
+            android:id="@+id/fotoprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fotoprofil"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/namaprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Miranda West"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="45dp"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_circle"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miranda"
+        android:textSize="24dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_email"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mirandawest@gmail.com"
+        android:textSize="24dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_phone"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+681235829579"
+        android:textSize="24dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_globe"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indonesia"
+        android:textSize="24dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_lock"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**********"
+        android:textSize="24dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_location"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceh"
+        android:textSize="24dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:src="@drawable/user_privasi"
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privasi"
+        android:textSize="24dp"
+        android:layout_marginTop="690dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/user_signout"
+        android:layout_marginTop="730dp"
+        android:layout_marginLeft="280dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="24dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginLeft="350dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+
+</RelativeLayout>
+
