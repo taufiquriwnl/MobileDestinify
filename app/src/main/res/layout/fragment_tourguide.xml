@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/background">
+    android:backgroundTint="@color/secondary">
 
     <ImageView
         android:id="@+id/L_img_1"
@@ -12,153 +12,76 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
         android:src="@drawable/gambar1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/home_text_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/L_img_1"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="Hi, Traveler!"
-        android:textColor="@color/black"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/frame1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.026"
+        tools:layout_editor_absoluteX="-15dp">
 
-    <TextView
-        android:id="@+id/home_text_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/L_img_1"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="Find Tourist Attraction and your experienced guide"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_text_1" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:labelFor="@+id/tombolkembali"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Tour Guide Page"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_margin="8dp"
         android:background="@drawable/search_view_bg"
-        app:iconifiedByDefault="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17"
-        app:queryHint="Search" />
-
-    <ImageView
-        android:id="@+id/icon_location"
-        android:layout_width="27dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="367dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252"
-        app:srcCompat="@drawable/iconlocation" />
-
-    <TextView
-        android:id="@+id/home_text_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinsbold"
-        android:text="Aceh"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
-
-    <TextView
-        android:id="@+id/topguides"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="Top Guides"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
-
-    <TextView
-        android:id="@+id/home_text_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="Top Guides"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
-
-    <Button
-        android:id="@+id/button_viewmore1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View More"
-        android:fontFamily="@font/poppinsmedium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.310" />
+        app:layout_constraintVertical_bias="0.105"
+        app:queryHint="Search"
+        app:iconifiedByDefault="false" />
 
     <FrameLayout
         android:id="@+id/frame1"
         android:layout_width="170dp"
         android:layout_height="250dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:background="@drawable/tourguide_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/home_text_4">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303">
 
-        <ImageButton
-            android:id="@+id/guider1"
+        <ImageView
+            android:labelFor="@+id/guider1"
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/foto1" />
+            android:src="@drawable/foto1"/>
 
         <TextView
             android:id="@+id/namaguider1"
@@ -169,19 +92,18 @@
             android:fontFamily="@font/poppinsregular"
             android:text="Resti Kirana"
             android:textColor="#008080"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/jasaguider1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Rp. 80.000"
+            android:text="Rp. 60.000"
             android:textColor="#FF0000"
-            android:textSize="12sp" />
+            android:textSize="12sp"/>
 
         <ImageView
             android:id="@+id/iconlokasiguider1"
@@ -189,7 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:layout_marginTop="165dp"
-            android:src="@drawable/iconlocation" />
+            android:src="@drawable/iconlocation"/>
 
         <ImageView
             android:id="@+id/ratingguider1"
@@ -197,19 +119,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:layout_marginTop="190dp"
-            android:src="@drawable/iconstar" />
+            android:src="@drawable/iconstar"/>
 
         <TextView
             android:id="@+id/lokasiguider1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
             android:layout_marginStart="15dp"
             android:layout_marginTop="160dp"
             android:fontFamily="@font/poppinsregular"
             android:text="Jakarta Pusat"
             android:textColor="#808080"
-            android:textSize="12sp" />
+            android:textSize="12sp"/>
 
         <Button
             android:id="@+id/buttonguider1"
@@ -231,13 +152,13 @@
         android:background="@drawable/tourguide_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintHorizontal_bias="0.863"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521">
+        app:layout_constraintVertical_bias="0.303">
 
-        <ImageButton
-            android:id="@+id/guider2"
+        <ImageView
+            android:labelFor="@+id/guider2"
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
@@ -249,7 +170,6 @@
             android:id="@+id/namaguider2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
             android:layout_marginStart="5dp"
             android:layout_marginTop="115dp"
             android:fontFamily="@font/poppinsregular"
@@ -264,7 +184,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Rp. 60.000"
+            android:text="Rp. 50.000"
             android:textColor="#FF0000"
             android:textSize="12sp"/>
 
@@ -308,92 +228,69 @@
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/home_text_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="Best Dosmetic Tourism"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.720" />
-
-    <Button
-        android:id="@+id/button_viewmore2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="View More"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.720" />
-
     <FrameLayout
         android:id="@+id/frame3"
-        android:layout_width="390dp"
-        android:layout_height="190dp"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
         android:background="@drawable/tourguide_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99">
+        app:layout_constraintVertical_bias="0.866">
 
         <ImageView
-            android:id="@+id/destinasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:labelFor="@+id/guider3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="6dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/fotodestinasi1"/>
+            android:src="@drawable/foto3"/>
 
         <TextView
-            android:id="@+id/namadestinasi"
+            android:id="@+id/namaguider3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="125dp"
+            android:layout_marginTop="115dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Resti Kirana"
+            android:text="Susie Wolf"
             android:textColor="#008080"
             android:textSize="14sp"/>
 
         <TextView
-            android:id="@+id/detaildestinasi"
+            android:id="@+id/jasaguider3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="145dp"
+            android:layout_marginTop="140dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Rp. 60.000"
+            android:text="Rp. 90.000"
             android:textColor="#FF0000"
             android:textSize="12sp"/>
 
         <ImageView
-            android:id="@+id/detaildestinasi2"
+            android:id="@+id/iconlokasiguider3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="155dp"
-            android:layout_marginTop="168dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="170dp"
             android:src="@drawable/iconlocation"/>
 
-        <TextView
-            android:id="@+id/lokasiwisata"
+        <ImageView
+            android:id="@+id/ratingguider3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="197dp"
+            android:src="@drawable/iconstar"/>
+
+        <TextView
+            android:id="@+id/lokasiguider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="165dp"
             android:fontFamily="@font/poppinsregular"
@@ -401,7 +298,100 @@
             android:textColor="#808080"
             android:textSize="12sp"/>
 
+        <Button
+            android:id="@+id/buttonguider3"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/secondary"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Detail"
+            android:textSize="11sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:background="@drawable/tourguide_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
+        <ImageView
+            android:labelFor="@+id/guider4"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foto5"/>
+
+        <TextView
+            android:id="@+id/namaguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Suryono"
+            android:textColor="#008080"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/jasaguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Rp. 40.000"
+            android:textColor="#FF0000"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iconlokasiguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/iconlocation"/>
+
+        <ImageView
+            android:id="@+id/ratingguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="197dp"
+            android:src="@drawable/iconstar"/>
+
+        <TextView
+            android:id="@+id/lokasiguider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jakarta Pusat"
+            android:textColor="#808080"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/buttonguider4"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/secondary"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Detail"
+            android:textSize="11sp"/>
+
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
